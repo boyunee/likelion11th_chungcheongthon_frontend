@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/assessment_write.css" />
+</head>
+
+<body>
+  <header>
+    <div id="super-div">
+      <div class="top-navbar">
+        <!-- logo -->
+        <div class="logo-div" onClick="location.href='/index.html'">
+          <img src="../img/assessment/logo.svg" alt="logo" />
+        </div>
+        <div id="top-navbar-middle">
+          <div>Features</div>
+          <div>Pricing</div>
+          <div>Contact</div>
+        </div>
+        <div id="login">
+          <span>로그아웃</span>
+          <span id="top-navbar-MyPageBox">My Page</span>
+        </div>
+      </div>
+
+      <div id="middle-div">
+        <div id="left-arrow">
+          <button
+            class="arrow_button"
+            onclick="history.back(-1)">
+            <img src="../img/assessment/Arrow 1.svg" alt="arrow" />
+          </button>
+        </div>
+        <h1>대전 드림바디 휘트니스</h1>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <ul class="menu">
+      <li>
+        <button id="outline" onClick="location.href='./detail_main_info.html'">
+          <img src="../img/assessment/outline.svg" alt="outline" />
+          <span>개요</span>
+        </button>
+      </li>
+      <li>
+        <button id="facility" onClick="location.href='./assessment.html'">
+          <img src="../img/assessment/facility.svg" alt="facility" />
+          <span>시설평</span>
+        </button>
+      </li>
+      <li>
+        <button id="trainer" onClick="location.href='./trainer.html'">
+          <img src="../img/assessment/trainer.svg" alt="trainer" />
+          <span>트레이너</span>
+        </button>
+      </li>
+    </ul>
+    <div class="assessment_master">
+      <div class="star_assesment">
+        <span class="star">
+          ★★★★★
+          <span>★★★★★</span>
+          <input type="range" oninput="drawStar(this)" value="1" step="1" min="0" max="10">
+        </span>
+        <div id="star-rating">0/5</div>
+      </div>
+
+      <div class="onewrite">
+        <span>"간단한 한줄평을 남겨주세요"</span>
+        <br />
+        <textarea class="one_assessment textarea"></textarea>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="sub-container">
+        <div class="container__image">
+          <img src="../img/assessment/money.svg" alt="money" />
+        </div>
+        <div class="container__paragraph">
+          <h3>가격은 어땠나요?</h3>
+          <div class="button-container">
+            <button class="1">
+              만족
+            </button>
+            <button class="1">
+              보통
+            </button>
+            <button class="1">
+              불만족
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="textarea-container">
+        <textarea class="textarea"></textarea>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="sub-container">
+        <div class="container__image">
+          <img src="../img/assessment/fitness_equipment.svg" alt="fitness_equipment" />
+        </div>
+        <div class="container__paragraph">
+          <h3>기구 종류는 다양했나요?</h3>
+          <div class="button-container">
+            <button class="2">
+              만족
+            </button>
+            <button class="2">
+              보통
+            </button>
+            <button class="2">
+              불만족
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="textarea-container">
+        <textarea class="textarea"></textarea>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="sub-container">
+        <div class="container__image">
+          <img src="../img/assessment/facility_environment.svg" alt="facility_environment" />
+        </div>
+        <div class="container__paragraph">
+          <h3>시설 환경은 어떠했나요?</h3>
+          <div class="button-container">
+            <button class="3">
+              만족
+            </button>
+            <button class="3">
+              보통
+            </button>
+            <button class="3">
+              불만족
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="textarea-container">
+        <textarea class="textarea"></textarea>
+      </div>
+    </div>
+
+    <div class="yes_or_no">
+      <div class="no">
+        <button 
+          id="no"
+          onclick="history.back(-1)">
+          취소
+        </button>
+      </div>
+      <div class="yes">
+        <button>확인</button>
+      </div>
+    </div>
+  </main>
+  <script src="/js/assessment_write.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/trainer_select_list.css" />
+</head>
+
+<body>
+  <header>
+    <div id="super-div">
+      <div class="top-navbar">
+        <div class="logo-div" onClick="location.href='/index.html'">
+          <img src="../img/assessment/logo.svg" alt="logo" />
+        </div>
+        <div id="top-navbar-middle">
+          <div>Features</div>
+          <div>Pricing</div>
+          <div>Contact</div>
+        </div>
+        <div id="login">
+          <span>로그아웃</span>
+          <span id="top-navbar-MyPageBox">My Page</span>
+        </div>
+      </div>
+
+      <div id="middle-div">
+        <div id="left-arrow">
+          <button 
+            class="arrow_button"
+            onclick="history.back(-1)">
+            <img src="../img/assessment/Arrow 1.svg" alt="arrow" />
+          </button>
+        </div>
+        <h1>대전 드림바디 휘트니스</h1>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <ul class="menu">
+      <li>
+        <button id="outline" onClick="location.href='./detail_main_info.html'">
+            <img src="/img/assessment2/outline.svg" alt="outline">
+            <span>개요</span>
+        </button>
+    </li>
+    <li>
+        <button id="facility" onClick="location.href='./assessment.html'">
+            <img src="/img/assessment2/facility.svg" alt="facility">
+            <span>시설평</span>
+        </button>
+    </li>
+    <li>
+        <button id="trainer" onClick="location.href='./trainer.html'">
+            <img src="../img/assessment2/trainer.svg" alt="trainer">
+            <span>트레이너</span>
+        </button>
+    </li>
+    <li>
+        <button id="write" onClick="location.href='./trainer_assessment.html'">
+            <img src="../img/assessment2/write.svg" alt="write">
+            <span>작성하기</span>
+        </button>
+    </li>
+    </ul>
+    <div id="super-div1"> 
+      <div class="assessment_master">
+        <div class="star_assesment">
+          <span class="star">
+            ★★★★★
+            <span>★★★★★</span>
+            <input type="range" oninput="drawStar(this)" value="1" step="1" min="0" max="10">
+          </span>
+        </div>    
+      </div>
+
+      <div class="user-templete">
+        <div class="user-top">
+          <img src="../img/assessment_list/profile.svg" alt="유저사진" class="user-profile">
+          <div class="user-topbar">
+            <div class="user-star">★★★★★</div>
+            <div class="user-period">2년 수강생</div>
+          </div>
+        </div>
+        <div class="text1">푸바오 선생님 너무 친절하시고 자세도 정말 꼼꼼히 봐주셔서 좋았어요. 비용이 조금 비싸긴 하지만, 그만큼 좋습니다 ㅎㅎㅎㅎㅎ</div>
+      </div>
+
+      <template id="user-info">
+        <div class="user-templete">
+          <div class="user-top">
+            <img src="../img/assessment_list/profile.svg" alt="유저사진" class="user-profile">
+            <div class="user-topbar">
+              <div class="user-star">★★★★★</div>
+              <div class="user-period"></div>
+            </div>
+          </div>
+          <div class="text1"></div>
+        </div>
+      </template>
+
+    
+    <script src="../js/trainer_select_list.js"></script>
+  </main>
+</body>
+
+</html>

@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#super-div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  background-color: #ffffff;
+}
+
+.top-navbar {
+  width: 100%;
+  height: 7%;
+  background-color: #f3f6fa;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10%;
+  box-sizing: border-box;
+  /* position: fixed; */
+  top: 0;
+  left: 0;
+  z-index: 100;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#login {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #3c64b1;
+}
+
+#top-navbar-MyPageBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  background-color: #3c64b1;
+  margin: 10px;
+  padding: 5px;
+}
+
+#top-navbar-middle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 92px;
+}
+
+#top-navbar-middle > div {
+  margin: 20%;
+}
+
+#middle-div {
+  width: 100%;
+  height: 40%;
+  background-color: #f3f6fa;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  box-sizing: border-box;
+  text-align: center;
+  top: 7%;
+  z-index: 100;
+}
+#left-arrow {
+  border: none;
+  outline: none;
+  margin-bottom: 2%;
+  display: flex;
+  position: absolute;
+  left: 350px;
+}
+
+#left-arrow button.arrow_button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+#middle-div h1 {
+  flex: 1;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  flex-direction: column;
+  align-items: flex-start;
+  position: fixed;
+}
+.menu li button {
+  border: none;
+  cursor: pointer;
+  outline: none;
+  height: 44px;
+  width: 150px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+}
+.menu li button span {
+  display: inline-block;
+  text-align: center;
+  width: 70px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.menu li button img {
+  margin-right: 10px;
+  margin-left: 30px;
+}
+.trainer_container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center; /* 요소들을 가로 방향으로 가운데 정렬합니다 */
+  grid-gap: 10px; /* 필요한 경우 요소들 사이의 간격을 조정할 수 있습니다 */
+  margin: 15px auto;
+  max-width: 800px;
+}
+.first_trainer,
+.second_trainer,
+.third_trainer,
+.fourth_trainer {
+  display: flex;
+  flex-direction: column; /* 요소들을 세로로 배열합니다 */
+  align-items: center; /* 요소들을 가로 방향으로 가운데 정렬합니다 */
+  font-size: 15px;
+  font-weight: bold;
+  margin: 10px auto;
+  max-width: 300px;
+}
+
+.first_trainer span,
+.second_trainer span,
+.third_trainer span,
+.fourth_trainer span {
+  margin-top: 15px;
+}
+
+.top_info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: bolder;
+  margin: 15px auto;
+  max-width: 800px;
+}
+
+.button_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 65px;
+  margin-bottom: 80px;
+}
+
+.button_container button {
+  height: 8px;
+  width: 8px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.menu li button:hover {
+  background-color: #eaf0ff;
+  width : 200px;
+}
+
+.first_trainer{
+  cursor: pointer;
+}

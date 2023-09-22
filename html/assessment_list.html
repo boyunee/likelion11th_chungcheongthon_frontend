@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/assessment_list.css" />
+</head>
+
+<body>
+  <header>
+    <div id="super-div">
+      <div class="top-navbar">
+        <div class="logo-div" onClick="location.href='/index.html'">
+          <img src="../img/assessment/logo.svg" alt="logo" />
+        </div>
+        <div id="top-navbar-middle">
+          <div>Features</div>
+          <div>Pricing</div>
+          <div>Contact</div>
+        </div>
+        <div id="login">
+          <span>로그아웃</span>
+          <span id="top-navbar-MyPageBox">My Page</span>
+        </div>
+      </div>
+
+      <div id="middle-div">
+        <div id="left-arrow">
+          <button
+            class="arrow_button"
+            onclick="history.back(-1)">
+            <img src="../img/assessment/Arrow 1.svg" alt="arrow" />
+          </button>
+        </div>
+        <h1>대전 드림바디 휘트니스</h1>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <ul class="menu">
+      <li>
+        <button id="outline" onClick="location.href='./detail_main_info.html'">
+          <img src="../img/assessment/outline.svg" alt="outline" />
+          <span>개요</span>
+        </button>
+      </li>
+      <li>
+        <button id="facility" onClick="location.href='./assessment.html'">
+          <img src="../img/assessment/facility.svg" alt="facility" />
+          <span>시설평</span>
+        </button>
+      </li>
+      <li>
+        <button id="trainer" onClick="location.href='./trainer.html'">
+          <img src="../img/assessment/trainer.svg" alt="trainer" />
+          <span>트레이너</span>
+        </button>
+        <li>
+          <button id="write" onClick="location.href='./assessment_write.html'">
+              <img src="../img/assessment2/write.svg" alt="write">
+              <span>작성하기</span>
+          </button>
+      </li>
+      </li>
+    </ul>
+    <div id="super-div1"> 
+      <div class="assessment_master">
+        <div class="star_assesment">
+          <span class="star">
+            ★★★★★
+            <span>★★★★★</span>
+            <input type="range" oninput="drawStar(this)" value="1" step="1" min="0" max="10">
+          </span>
+        </div>    
+      </div>
+
+      <div class="user-templete">
+        <div class="user-top">
+          <img src="../img/assessment_list/profile.svg" alt="유저사진" class="user-profile">
+          <div class="user-topbar">
+            <div class="user-star">★★★★★</div>
+            <div class="user-period">3년 5개월 사용자</div>
+          </div>
+        </div>
+        <div class="text1">그냥 가까워서 좋음 ㅇㅇ</div>
+        <div class="user-container">
+          <div class="price">
+            <div>이용료</div>
+            <span>1달 기준 12만원</span>
+          </div>
+          <div class="type">
+            <div>기구종류</div>
+            <span>사이클이 없어서 종류가 다양하진 않아요.</span>
+          </div>
+          <div class="environment">
+            <div>센터환경</div>
+            <span>에어컨을 세게 틀어주지 않아서 불만이었어요.</span>
+          </div>
+        </div>
+      </div>
+
+      <template id="user-info">
+        <div class="user-tamplete">
+          <div class="user-top">
+            <img src="../img/assessment_list/profile.svg" alt="유저사진" class="user-profile">
+            <div class="user-topbar">
+              <div class="user-star">★★★★★</div>
+              <div class="user-period">3년 5개월 사용자</div>
+            </div>
+          </div>
+          <div class="text1"></div>
+          <div class="user-container">
+            <div class="price">
+              <div>이용료</div>
+              <span></span>
+            </div>
+            <div class="type">
+              <div>기구종류</div>
+              <span></span>
+            </div>
+            <div class="environment">
+              <div>센터환경</div>
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </template>    
+    </div>
+
+    
+    <script src="../js/assessment_list.js"></script>
+  </main>
+</body>
+
+</html>
