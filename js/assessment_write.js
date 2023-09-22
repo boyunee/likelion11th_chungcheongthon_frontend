@@ -94,8 +94,8 @@ async function getData(assessment1) {
     body: JSON.stringify(assessment1),
   });
 
-  const data = await res.json();
-  console.log(data);
+  // const data = await res.json();
+  // console.log(data);
   window.history.back(-1);
 }
 
