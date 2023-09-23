@@ -155,3 +155,55 @@
 .photo {
   cursor: pointer;
 }
+
+.trade_in h2 {
+  display: inline-block; /* h3 태그를 인라인 블록 요소로 설정 */
+  margin: 0; /* 기본 마진 제거 */
+}
+
+.trade_btn {
+  display: inline-block; /* button 태그를 인라인 블록 요소로 설정 */
+  outline: none;
+  border: none;
+  background-color: white;
+  border-radius: 10px;
+  height: 40px;
+  padding: 10px;
+  margin-top: 20px;
+  margin-left: 300px; /* h3 태그와의 간격을 조절 */
+  cursor: pointer;
+}
+
+
+.photo_trade {
+  display: flex;
+  flex-direction: column;  /* 세로 방향 배치 */
+  align-items: center;  /* 중앙 정렬 */
+}
+
+.photo_line1 {
+  display: flex;
+  justify-content: center;
+}
+
+.photo_line1_1,
+.photo_line1_2,
+.photo_line1_3 {
+  margin-top: 50px;
+  margin-right: 10px; /* 이미지 사이의 거리를 조절합니다. 필요에 따라 값을 변경하세요. */
+}
+.photo_line1_3 {
+  margin-right: 0; /* 마지막 이미지에서 오른쪽 여백 제거 */
+}
+
+.photo_line2 {
+  display: flex;
+  justify-content: center;
+}
+
+.photo_line1_1 img,
+.photo_line1_2 img,
+.photo_line1_3 img {
+    cursor: pointer;  /* 마우스 커서가 이미지 위로 이동했을 때 포인터 모양으로 변경 */
+    width: 200px;
+}
