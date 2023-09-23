@@ -196,14 +196,10 @@
   margin-right: 0; /* 마지막 이미지에서 오른쪽 여백 제거 */
 }
 
-.photo_line2 {
-  display: flex;
-  justify-content: center;
-}
-
 .photo_line1_1 img,
 .photo_line1_2 img,
 .photo_line1_3 img {
     cursor: pointer;  /* 마우스 커서가 이미지 위로 이동했을 때 포인터 모양으로 변경 */
     width: 200px;
+    margin-bottom: 50px;
 }

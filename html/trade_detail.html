@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>trade_detail</title>
+    <link rel="stylesheet" href="../css/trade_detail.css" />
+  </head>
+  <body>
+    <header>
+      <div id="super-div">
+          <div class="top-navbar">
+              <div class="logo-div" onClick="location.href='/index.html'">
+                  <img src="../img/assessment/logo.svg" alt="logo" />
+              </div>
+              <div id="top-navbar-middle">
+                  <div>Features</div>
+                  <div>Pricing</div>
+                  <div>Contact</div>
+              </div>
+              <div id="login">
+                  <span>로그아웃</span>
+                  <span id="top-navbar-MyPageBox">My Page</span>
+              </div>
+          </div>
+
+          <div id="middle-div">
+              <div id="left-arrow">
+                  <button
+                      class="arrow_button"
+                      onclick="history.back(-1)">
+                      <img src="../img/assessment/Arrow 1.svg" alt="arrow" />
+                  </button>
+              </div>
+              <h1>대전 드림바디 휘트니스</h1>
+              </div>
+          </div>
+  </header>
+
+  <main>
+      <ul class="menu">
+          <li>
+              <button id="outline" onClick="location.href='./detail_main_info.html'">
+                  <img src="/img/assessment2/outline.svg" alt="outline">
+                  <span>개요</span>
+              </button>
+          </li>
+          <li>
+              <button id="facility" onClick="location.href='./assessment.html'">
+                  <img src="/img/assessment2/facility.svg" alt="facility">
+                  <span>시설평</span>
+              </button>
+          </li>
+          <li>
+              <button id="trainer" onClick="location.href='./trainer.html'">
+                  <img src="../img/assessment2/trainer.svg" alt="trainer">
+                  <span>트레이너</span>
+              </button>
+          </li>
+          <li>
+              <button id="write" onClick="location.href='./assessment_write.html'">
+                  <img src="../img/assessment2/write.svg" alt="write">
+                  <span>등록하기</span>
+              </button>
+          </li>
+      </ul>
+      <div class = "main_page">
+        <div class ="span">
+          <h2>양도해요</h2>
+          <br>
+          <span>대전 드림바디 휘트니스</span>
+          <br>
+          <span>헬스장 기간권/ PT 수강권을 원하는 사용자들이에요</span>
+          <div class="month_user">
+            <div class="months">
+              <img src="../img/trade_detail/14months.png" alt="img">
+            </div>
+            <div class="user">
+              <img src="../img/trade_detail/article.png" alt="article">
+            </div>
+          </div>
+          <div class="trade_in">
+            <h2>대전 드림바디 휘트니스의 다른 양도</h2>
+            <button
+              class="trade_btn"
+              onclick="location.href='./trade.html'"
+            >
+              <h3>더보기</h3>
+            </button>
+            <div class="photo_line1">
+              <div class="photo_line1_1">
+                  <img 
+                  src="../img/trade_detail/5months.png" 
+                  onClick="location.href='./trade.html'"/>
+              </div>
+    
+              <div class="photo_line1_2">
+                  <img 
+                  src="../img/trade_detail/4months.png" 
+                  onClick="location.href='./trade.html'"/>
+              </div>
+    
+              
+              <div class="photo_line1_3">
+                  <img 
+                  src="../img/trade_detail/3months.png" 
+                  onClick="location.href='./trade.html'"/>     
+              </div>
+          </div>
+          </div>
+          </div>
+        </div>
+
+      </div>
+  </body>
+</html>
