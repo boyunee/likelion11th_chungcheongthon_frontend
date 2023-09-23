@@ -85,7 +85,7 @@ button.forEach((element) => {
 })
 
 async function getData(assessment1) {
-  const url = "https://b32e-2406-da12-852-b900-90c9-9675-10e4-479f.ngrok-free.app"
+  const url = "https://1738-2406-da12-852-b900-90c9-9675-10e4-479f.ngrok-free.app"
   const res = await fetch(url+'/gym', {
     method: 'POST',
     headers: {
